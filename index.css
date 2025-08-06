@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css2?family=Meow+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: url('ASSETS/SL-011719-17920-65.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: black;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  font-size: 30px;
+  /* text-decoration-line: underline; */
+}
+
+.menu-bar {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+  margin-left: 10%;
+  align-items: center;
+}
+
+.menu-bar li a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-bar li a:hover {
+  color: lch(68.32% 37.82 240.19);
+  text-decoration: underline; 
+  text-underline-offset: 6px;
+}
+
+/* Section layout: text + image */
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 50px;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap; /* for responsiveness */
+}
+
+/* Image styling */
+.rockyimg {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Text section */
+.s-1 {
+  flex: 1;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Header */
+.s-1-1 {
+  font-size: 40px;
+  font-weight: 600;
+  color: rgb(52, 179, 225);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Paragraph */
+.s-1-2 {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 50px;
+  width: 300px;
+  margin-left: 50px;
+  padding-left: 50px;
+  justify-content: center;
+}
+
+.skills-title-programming {
+  font-size: 24px;
+  font-weight: 600;
+  color: rgb(52, 179, 225);
+  margin-bottom: 10px;
+}
+
+.skills-list {
+  list-style-type: square;
+  /* list-style-type: square; */
+  padding-left: 20px;
+  font-size: 16px;
+  line-height: 1.8;
+  color: black;
+}
+
+.skills-container {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap; /* responsive for small screens */
+}
+
+.SKILLS-TITLE {
+  margin:0%;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  border-radius: 8px;
+  margin: 30px auto 20px auto;
+  width: 100%;
+  max-width: 600px;
+  padding: 0;
+
+  animation: movetext 10s linear infinite;
+}
+
+.PROGRAMMING-SKILLS-TITLE {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  color: rgb(52, 179, 225);
+  margin-top: 20px;
+  margin-left: 100px;
+}
+
+.skills-section-MechanicalEngg.card {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  transition: transform 0.3s cubic-bezier(.4,2,.6,1), box-shadow 0.3s;
+  /* width and min-height already set above */
+}
+
+.skills-section-MechanicalEngg.card:hover {
+  transform: translateY(-15px) scale(1.05);
+  box-shadow: 0 8px 24px rgba(52,179,225,0.2), 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.MECHANICAL-HEADER {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  color: rgb(52, 179, 225);
+  margin-top: 20px;
+  margin-left: 100px;
+}
+
+.skills-section-MechanicalEngg.card {
+  margin: auto; /* centers the card horizontally */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+  /* width and min-height already set above */
+}
+.card.skills-Backend {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  transition: transform 0.3s cubic-bezier(.4,2,.6,1), box-shadow 0.3s;
+}
+.card.skills-Backend:hover {
+  transform: translateY(-15px) scale(1.05);
+  box-shadow: 0 8px 24px rgba(52,179,225,0.2), 0 4px 10px rgba(0,0,0,0.15);
+}
+.card.skills-section{
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  transition: transform 0.3s cubic-bezier(.4,2,.6,1), box-shadow 0.3s;
+}
+.card.skills-section:hover {
+  transform: translateY(-15px) scale(1.05);
+  box-shadow: 0 8px 24px rgba(52,179,225,0.2), 0 4px 10px rgba(0,0,0,0.15);
+} 
+.card.skills-section-DATA-BASE{
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  transition: transform 0.3s cubic-bezier(.4,2,.6,1), box-shadow 0.3s;
+}
+.card.skills-section-DATA-BASE:hover {
+  transform: translateY(-15px) scale(1.05);
+  box-shadow: 0 8px 24px rgba(52,179,225,0.2), 0 4px 10px rgba(0,0,0,0.15);
+}
+.PROJECTS-TITLE{
+  margin-left: 50%;
+  padding: 2px;
+  align-items: center;
+  color:black;
+
+
+}
+.projects-section-1{
+  
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  border-radius: 5px;
+  box-shadow: 0 4px 16px rgba(52, 179, 225, 0.15),0 2px 4px rgba(0,0,0,0.08);
+
+}
+.project-1{
+  display: inline-block;
+  /* background-color: beige; */
+  align-items: center;
+  color: aqua;
+  margin-left: 40%;
+  margin-right: auto;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  box-shadow: 0 4px 16px rgba(166, 15, 225, 0.15),0 2px 4px rgba(187, 77, 77, 0.08);
+}
+.chat-application{
+  align-items: center;
+  margin-left: 30%;
+  flex-wrap: wrap;
+}
+ 
+.project-1-DESCRIPTION{
+  align-items: center;
+  margin-left: 30%;
+  padding: 2rem;
+  font-weight: 500;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  
+}
+.project-button-1 {
+  display: block;
+  margin: 20px auto 0 auto; /* centers the button horizontally */
+  background-color: lightblue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.project-2{
+  background-color: transparent;
+  font-weight: 500;
+
+}
+.project-2-title{
+  text-align: center;
+  color: aqua;
+  margin-left: 30%;
+  background-color:white;
+  flex-wrap: wrap;
+    box-shadow: 0 4px 16px rgba(166, 15, 225, 0.15),0 2px 4px rgba(187, 77, 77, 0.08);
+    margin-bottom: 0.5rem;
+}
+.project-divider {
+  border: none;
+  border-top: 2px dotted #aaa;
+  margin: 40px auto;
+  width: 80%;
+}
+.project-button-2{
+   display: block;
+  margin: 20px auto 0 auto; /* centers the button horizontally */
+  background-color: lightblue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.project-divider-1 {
+  border: none;
+  border-top: 2px dotted #aaa;
+  margin: 40px auto;
+  width: 100%;
+}
+.project-2-DESCRIPTION{
+   align-items: center;
+  margin-left: 30%;
+  padding: 2rem;
+  font-weight: 500;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+.Resume-Button {
+  text-align: center;
+  font-size: 50px;
+  border-radius: 3rem;
+  color: #aaa;
+  text-decoration: none;
+  
+}
+/* Footer base styling */
+.footer {
+  background-color: #1e1e1e; /* Dark background */
+  color: #ffffff;            /* White text */
+  padding: 20px 0;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Footer content row */
+.footer-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Make responsive on small screens */
+  gap: 20px;
+}
+
+/* Footer text */
+.footer-row span {
+  font-size: 14px;
+  margin-right: 20px;
+}
+
+
+.footer-icon {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover effects for icons */
+.footer-icon:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+
+}
